@@ -14,10 +14,8 @@ Weights are initialised randomly with noraml distributiuon. we spcify the mean a
 
 ### 4 What is "loss" in a neural network?
 
-
-
-
-
+The deviation from the calculated output from the original output is called loss. The loss can be mean sqwuare error or root mean square error. It is usually the differencebetween the expected output and calculated output.
 
 
 ### 5 What is the "chain rule" in gradient flow?
+To minimise the loss, we recalculate the all weights in all layers of NN. while we recalculating the weights the partial derivatives of the loss function is used. As loss frunction is dependent on the other weights, we need to calculate its partial derivative. to do this, we use chain rule where we differentiate from the last layer to the first layer. This is chain rule.  
